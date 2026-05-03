@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///D:/web-dev/my-portfolio%20-%20Copy/components/ui/ProjectTech3DWrapper.tsx"],"sourcesContent":["\"use client\"\n\nimport dynamic from \"next/dynamic\"\n\n// Move the dynamic import to a Client Component as per Next.js requirements\nconst ProjectTech3D = dynamic(() => import(\"./ProjectTech3D\"), { \n    ssr: false,\n    loading: () => <div className=\"w-full h-[300px] md:h-[400px] animate-pulse bg-muted/20 rounded-3xl\" />\n})\n\nexport default function ProjectTech3DWrapper({ stack }: { stack: string[] }) {\n    return <ProjectTech3D stack={stack} />\n}\n"],"names":[],"mappings":";;;;;AAEA;;AAFA;;;AAIA,4EAA4E;AAC5E,MAAM,gBAAgB,IAAA,0KAAO;;;;;;IACzB,KAAK;IACL,SAAS,kBAAM,8OAAC;YAAI,WAAU;;;;;;;AAGnB,SAAS,qBAAqB,EAAE,KAAK,EAAuB;IACvE,qBAAO,8OAAC;QAAc,OAAO;;;;;;AACjC"}}]
+}
